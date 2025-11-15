@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ReceitaEntity" representedClassName="ReceitaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="valor" optional="NO" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="descricao" optional="NO" attributeType="String"/>
+        <attribute name="categoria" optional="YES" attributeType="String"/>
+        <attribute name="data" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="metaAssociada" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="DespesaEntity" representedClassName="DespesaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="valor" optional="NO" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="descricao" optional="NO" attributeType="String"/>
+        <attribute name="categoria" optional="NO" attributeType="String"/>
+        <attribute name="dataVencimento" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="status" optional="NO" attributeType="String" defaultValueString="Não Pago"/>
+        <attribute name="metaAssociada" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="dataPagamento" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="MetaEntity" representedClassName="MetaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nome" optional="NO" attributeType="String"/>
+        <attribute name="valorTotal" optional="NO" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="valorAcumulado" optional="NO" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="prazo" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descricao" optional="YES" attributeType="String"/>
+        <attribute name="cor" optional="YES" attributeType="String" defaultValueString="#007AFF"/>
+    </entity>
+</model>
